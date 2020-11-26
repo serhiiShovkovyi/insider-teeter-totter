@@ -1,13 +1,8 @@
 <template>
   <div class="w-full playground">
-    <dialog-popup @on-retry="initGame" dialog-text="GAME OVER" />
+    <dialog-popup dialog-text="GAME OVER" />
 
-    <info-panel
-      :calculated-momentum-left="totalWeighLeft"
-      :calculated-momentum-right="calculatedMomentumLeft"
-      :total-weigh-left="totalWeighRight"
-      :total-weigh-right="calculatedMomentumRight"
-    />
+    <info-panel />
     <falling-area />
     <teeter-totter />
     <control-panel />
